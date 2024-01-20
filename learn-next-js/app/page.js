@@ -4,8 +4,8 @@ import React from 'react'
 const HomePage = () => {
   return (
     <div>
-      <h1 className='text-7xl'>HomePage</h1>
-      <Link href='/about' className='text-2xl' >to AboutPage</Link>
+      <h1 className='text-5xl my-8 font-bold'>Next.Js Tutorial</h1>
+      <Link href='/client' className='btn btn-accent' >Get Started</Link>
     </div>
   )
 }
