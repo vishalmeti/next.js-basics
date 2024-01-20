@@ -1,11 +1,14 @@
+import Link from 'next/link'
 import React from 'react'
 
-const Aboutme = () => {
+
+const AboutPage = () => {
   return (
     <div>
-      <h1 className='text-7xl'>Aboutme</h1>
+      <h1 className='text-7xl'>AboutPage</h1>
+      <Link href='/' className='text-2xl' >to HomePage</Link>
     </div>
   )
 }
 
-export default Aboutme
+export default AboutPage
