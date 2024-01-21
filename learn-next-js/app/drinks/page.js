@@ -1,5 +1,7 @@
 
+'use client'
 const url = 'https://www.thecocktaildb.com/api/json/v1/1/search.php?f=a'
+import DrinksList from '@/components/DrinksList'
 
 //so here we are adding a delay of 1sec in fetching data from the url. As we know this is a server componenet
 // we are fetching data from online server and displaying to user.. if we want a loading screen till the data is 
@@ -18,10 +20,11 @@ if(!response.ok){
 
 const Drinks = async() => {
   const data = await fetchData();
-  console.log(data)
+  // console.log(data.drinks)
   return (
     <div>
-      <h1 className='text-7xl font-bold'>Drinks</h1>
+      <h1 className='text-4xl font-bold'>Drinks</h1> 
+      <DrinksList drinkList={data.drinks } />
     </div>
   )
 }
